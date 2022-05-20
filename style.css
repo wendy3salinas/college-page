@@ -221,4 +221,57 @@ nav .fa{
     width: 100%;
 }
 
+.campus-col img{
+    width: 100%;
+}
 
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+    transition: 1s;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.facilities{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.facilities-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+
+.facilities-col img{
+    width: 100%;
+}
