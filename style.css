@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
 nav{ 
     background-image: linear-gradient(rgba(4, 9, 30, 0.75),rgba(4, 9, 30, 0.75)),url(images/banner.png);
     width: 100%;
@@ -125,6 +124,11 @@ nav .fa{
         display: block;
     }
 
+    /* you need to add "html, body {overflow-x: hidden;}" in the media query 
+    in order to prevent the user from being able to scroll to the nav-links bar 
+    when it has a negative right value.
+    */
+
     .nav-links{
         position: absolute;
         background: #a51662;
@@ -156,6 +160,11 @@ nav .fa{
 
     .row{
         flex-direction: column;
+
+    }
+
+    #facil{
+        width: fit-content;
     }
 
 }
@@ -258,20 +267,36 @@ nav .fa{
 
 .facilities{
     width: 80%;
-    text-align: center;
     margin: auto;
-    padding-top: 50px;
+    text-align: center;
+    padding-top: 100px;
 }
 
 .facilities-col{
-    flex-basis: 32%;
+    flex-basis: 31%;
     border-radius: 10px;
-    margin-bottom: 10px;
-    position: relative;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+
+/*
+position: relative;
     overflow: hidden;
     width: 50%;
-}
+*/
 
 .facilities-col img{
     width: 100%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding: 0%;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
 }
